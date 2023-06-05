@@ -42,7 +42,7 @@ def index():
         db.session.add(form)
         db.session.commit()
 
-        message_body = f"Thank you for your submission, {first_name}. " \
+        message_body = f"Thank you for your submission, {first_name}. \n" \
                        f"Here are your data: {first_name}\n{last_name}\n{date_obj}\n" \
                        f"Thank you!"
 
